@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
+
+body{
+    background: linear-gradient(100deg, #c4c5c3, #648464);
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 190px;
+    position: fixed;
+}
+header .logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px;
+    color: #2d9e2d;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+}
+header nav #cancel{
+   font-size: 3vw;
+   display: none;
+}
+
+header .icons #side{
+   font-size: 3.4vw;
+   display: none;
+}
+header nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 10px;
+}
+header a{
+    text-decoration: none;
+    color: #c4c5c3;
+    font-weight: 700;
+    display: none;
+}
+header .btns{
+    display: inline;
+}
+header .btns button{
+    padding: 8px 17px;
+    font-weight: 600;
+    border: none;
+    margin: 4px;
+    border-radius: 3px;
+    font-family: "Fredoka", sans-serif;
+}
+header .clr{
+    background: #2d9e2d;
+    color: #e8eee3;
+}
+header .icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+header .icons i{
+    color: #e8eee3;
+    font-size: 2vw;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    height: 100vh;
+    background-image: url(two.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+main h2{
+    font-size: 3.5vw;
+    color: #46ff46;
+}
+main h3{
+    font-size: 2.5vw;
+    color: #c4c5c3;
+}
+main .opper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .opper button{
+    padding: 20px 50px;
+    border: none;
+    font-weight: 700;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+}
+main .opper .chg{
+    background: #46ff46;
+    backdrop-filter: blur(10px);
+
+}
+.products{
+    height: 100vh;
+    background-image: url(tree.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+.products h2{
+    font-size: 2.6vw;
+    color: #c4c5c3;
+    font-weight: 700;
+   padding: 40px;
+    position: absolute;
+}
+.products .prds{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-left: 40px;
+}
+.products .prds .product-detals{
+    display: flex;
+    color: #c4c5c3;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    width: 250px;
+    box-shadow: inset 0px 0px 30px #648464, 0px 0px 3px #c4c5c3;
+    padding: 30px 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 10px;
+}
+.products .prds .product-detals .name{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.products .prds .product-detals .name img{
+    width: 100px;
+
+}
+.products .prds .product-detals .name strong{
+    font-size: 2vw;
+    color: #ffffff;
+}
+.products .prds .product-detals .dtls{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.products .prds .product-detals .bts{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.products .prds .product-detals .bts button{
+    padding: 10px 18px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px #dbdfdb;
+    border: none;
+    outline: none;
+    background: #46ff46;
+}
+.products .prds .product-detals .bts .col{
+    background: #db7d7d;
+    color: #1a1a1a;
+}
+.pooter{
+    background-image: url(6x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #c4c5c3;
+    padding: 20px 30px;
+    gap: 50px;
+    height: 90vh;
+}
+.pooter .one .two ul li
+{
+    font-size: 1.6vw;
+}
+.pooter .tree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pooter .tree i{
+    font-size: 3vw;
+}
+@media (max-width:1338px){
+    header{
+        gap: 100px;
+    }
+}
+@media (max-width:1235px){
+    .products{
+        gap: 3px;
+    }
+    .products .prds{
+       
+        padding-top: 150px;
+        padding-left: 2px;
+    }
+}
+@media (max-width:1145px){
+    .products{
+        gap: 3px;
+        justify-content: space-around;
+        padding: 50px;
+        height: 120vh;
+    }
+    .products .prds{
+       
+        padding-top: 150px;
+        padding-left: 3px;
+    }
+}
+@media (max-width:1050px){
+    header{
+        gap: 50px;
+    }
+    header .icons
+{
+    padding: 10px;
+}
+}
+@media (max-width:957px){
+    header nav a {
+      font-size: 1.5vw;
+    }
+    .products{
+        gap: 3px;
+        justify-content: space-around;
+        padding: 10px;
+        height: 120vh;
+    }
+    .products .prds .product-detals{
+        width: 250px;
+        box-shadow: inset 0px 0px 30px #648464, 0px 0px 3px #c4c5c3;
+        padding: 30px 10px;
+      
+    }
+    .pooter .tree i{
+        font-size: 3vw;
+    }
+}
+@media (max-width:880px){
+    header{
+        gap: 10px;
+    }
+    header nav a {
+      font-size: 1.7vw;
+    }
+    .products{
+        gap: 43px;
+        justify-content: space-around;
+        padding-left: 60px;
+        height: 130vh;
+    }
+    .products .prds .product-detals{
+        width: 250px;
+        box-shadow: inset 0px 0px 30px #648464, 0px 0px 3px #c4c5c3;
+        padding: 30px 10px;
+        backdrop-filter: blur(2px);
+    }
+    .pooter .tree i{
+        font-size: 5vw;
+    }
+}
+@media (max-width:730px){
+    header{
+        gap: 100px;
+    }
+   
+    header nav {
+     display: none;
+     flex-direction: column;
+     top: 80px;
+     position: absolute;
+     background: transparent;
+     backdrop-filter: blur(-10px);
+     padding: 100px;
+     box-shadow:  0px 0px 10px #648464, 0px 0px 3px #c4c5c3;
+     z-index: 1;
+     border-radius: 5px;
+    }
+    header nav a {
+        font-size: 1.7vw;
+        z-index: 1;
+      }
+    header .icons i{
+      font-size: 2.8vw;
+    }
+  
+   
+    header nav #cancel{
+   font-size: 5vw;
+   display: block;
+   padding-left: 120px;
+   padding-top: 10px;
+   position: absolute;
+   top: 0;
+}
+
+header .icons #side{
+   font-size: 4.5vw;
+   display: flex;
+   margin-top: -3px;
+}
+    }
+    @media (max-width:700px){
+        .products{
+            gap: 43px;
+            justify-content: space-around;
+            padding-left: 40px;
+            height: 130vh;
+        }
+        .products .prds .product-detals{
+            width: 250px;
+            box-shadow: inset 0px 0px 30px #648464, 0px 0px 3px #c4c5c3;
+            padding: 30px 10px;
+            backdrop-filter: blur(2px);
+        }
+        .pooter .tree i{
+            font-size: 5vw;
+        }
+    }
+    @media (max-width:650px){
+        header{
+            gap: 40px;
+        }
+        header .icons i{
+            font-size: 4vw;
+        } 
+        .products{
+            gap: 43px;
+            justify-content: space-around;
+            padding-left: 40px;
+            height: 130vh;
+        }
+        .products .prds .product-detals{
+            width: 250px;
+            box-shadow: inset 0px 0px 30px #648464, 0px 0px 3px #c4c5c3;
+            padding: 30px 10px;
+            backdrop-filter: blur(2px);
+        }
+        .pooter .tree i{
+            font-size: 5vw;
+        }
+    }
+    @media (max-width:610px){
+        header{
+            gap: 40px;
+        }
+        header .icons i{
+            font-size: 4vw;
+        } 
+      main  .opper button{
+            padding: 10px 20px;
+            font-size: 3vw;
+        }
+        .products{
+            gap: 43px;
+            justify-content: space-around;
+            padding-left: 160px;
+            height: 230vh;
+            gap: 40px;
+        }
+        .products .prds .product-detals{
+            width: 250px;
+            box-shadow: inset 0px 0px 30px #648464, 0px 0px 3px #c4c5c3;
+            padding: 30px 10px;
+            backdrop-filter: blur(2px);
+        }
+        .pooter .tree i{
+            font-size: 5vw;
+        }
+    }
+    @media (max-width:550px){
+       header{
+         gap: 10px; 
+       }
+       header .logo{
+        font-size: 3.3vw;
+       }
+       header .btns{
+          display: none;
+       }
+       header nav a{
+        font-size: 3vw;
+       }
+       header a{
+        text-decoration: none;
+        color: #c4c5c3;
+        font-size: 3vw;
+        font-weight: 700;
+        display: flex;
+        margin: 10px 70px;
+    }
+    .products{
+        gap: 43px;
+        justify-content: space-around;
+        padding-left: 110px;
+        height: 230vh;
+        gap: 40px;
+    }
+    .products h2
+    {
+        font-size: 5vw;
+    }
+    .products .prds .product-detals{
+        width: 250px;
+        box-shadow:0px 0px 10px #648464, 0px 0px 3px #c4c5c3;
+        padding: 30px 10px;
+        border-radius: 5px;
+        backdrop-filter: blur(20px);
+    }
+    .products .prds .product-detals .name strong {
+         font-size: 4vw;
+    }
+       main h2{
+        font-size: 5vw;
+       }
+       main h3{
+        font-size: 4.5vw;
+       }
+    }
+
+    @media (max-width:480px){
+        header{
+          gap: 2px; 
+        }
+        header .logo{
+         font-size: 3.3vw;
+        }
+        header .btns{
+           display: none;
+        }
+        header nav a{
+         font-size: 3vw;
+        }
+        header .icons{
+            margin-left: -40px;
+        }
+        header a{
+         text-decoration: none;
+         color: #c4c5c3;
+         font-size: 3vw;
+         font-weight: 700;
+         display: flex;
+         margin: 10px 70px;
+     }
+     .products{
+         gap: 43px;
+         justify-content: space-around;
+         padding-left: 80px;
+         height: 230vh;
+         gap: 40px;
+     }
+     .products h2
+     {
+         font-size: 5vw;
+     }
+     .products .prds .product-detals{
+         width: 250px;
+         box-shadow:0px 0px 10px #648464, 0px 0px 3px #c4c5c3;
+         padding: 30px 10px;
+         border-radius: 5px;
+         backdrop-filter: blur(20px);
+     }
+     .products .prds .product-detals .name strong {
+          font-size: 4vw;
+     }
+        main h2{
+         font-size: 5vw;
+        }
+        main h3{
+         font-size: 4.5vw;
+        }
+     }
+
+     @media (max-width:415px){
+        header{
+          gap: 2px; 
+        }
+        header .logo{
+         font-size: 3.3vw;
+         margin: 3px;
+        }
+        header .btns{
+           display: none;
+        }
+        header nav a{
+         font-size: 3vw;
+        }
+        header .icons{
+            margin-left: -40px;
+        }
+        header a{
+         text-decoration: none;
+         color: #c4c5c3;
+         font-size: 3vw;
+         font-weight: 700;
+         display: flex;
+         margin: 10px 70px;
+     }
+     .products{
+         gap: 43px;
+         justify-content: space-around;
+         padding-left: 60px;
+         height: 230vh;
+         gap: 40px;
+     }
+     .products h2
+     {
+         font-size: 5vw;
+     }
+     .products .prds .product-detals{
+         width: 250px;
+         box-shadow:0px 0px 10px #648464, 0px 0px 3px #c4c5c3;
+         padding: 30px 10px;
+         border-radius: 5px;
+         backdrop-filter: blur(20px);
+     }
+     .products .prds .product-detals .name strong {
+          font-size: 4vw;
+     }
+        main h2{
+         font-size: 5vw;
+        }
+        main h3{
+         font-size: 4.5vw;
+        }
+     }
+     @media (max-width:375px){
+        header{
+          gap: 2px; 
+        }
+        header .logo{
+         font-size: 3.3vw;
+         margin: 3px;
+        }
+        header .btns{
+           display: none;
+        }
+        header nav a{
+         font-size: 3vw;
+        }
+        header .icons{
+            margin-left: -60px;
+        }
+        header a{
+         text-decoration: none;
+         color: #c4c5c3;
+         font-size: 3vw;
+         font-weight: 700;
+         display: flex;
+         margin: 10px 70px;
+     }
+     .products{
+         gap: 43px;
+         justify-content: space-around;
+         padding-left: 50px;
+         height: 230vh;
+         gap: 40px;
+     }
+     .products .prds .product-detals{
+        width: 250px;
+        box-shadow:0px 0px 10px #648464, 0px 0px 3px #c4c5c3;
+        padding: 20px 8px;
+        border-radius: 5px;
+        backdrop-filter: blur(20px);
+    }
+    }
+    @media (max-width:350px){
+        header{
+          gap: 2px; 
+        }
+        header .logo{
+         font-size: 3.3vw;
+         margin: 3px;
+        }
+        header .btns{
+           display: none;
+        }
+        header nav a{
+         font-size: 3vw;
+        }
+        header .icons{
+            margin-left: -60px;
+        }
+        header a{
+         text-decoration: none;
+         color: #c4c5c3;
+         font-size: 3vw;
+         font-weight: 700;
+         display: flex;
+         margin: 10px 70px;
+     }
+     .products{
+         gap: 43px;
+         justify-content: space-around;
+         padding-left: 30px;
+         height: 230vh;
+         gap: 40px;
+     }
+    }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce site</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>E-STORE</span>
+        </div>
+        <nav id="navs">
+            <i class="ri-close-circle-line" id="cancel" style="color: #ffffff;" onclick="HideBlow()"></i>
+            <a href="lnk.html">About</a>
+            <a href="">Products</a>
+            <a href="">Sells</a>
+            <a href="">Rating</a>
+            <a href="">History</a>
+        </nav>
+      <a href="" onclick="showBtns()">Account</a>
+        <div class="btns">
+            <div id="buttor">
+                <button class="clr">Signup</button>
+                <button>Login</button>
+            </div>
+           
+        </div>
+        <div class="icons">
+            <i class="ri-search-2-line"></i>
+            <i class="ri-shopping-cart-2-line"></i>
+            <i class="ri-question-line"></i>
+            <i class="ri-logout-circle-r-line"></i>
+            <i class="ri-menu-4-line" id="side" onclick="blow()"></i>
+        </div>
+    </header>
+    <main>
+        <h2>VENDOR ON YOUR HAND</h2>
+        <h3>Affordable Products By One Click</h3>
+         <div class="opper">
+           <button class="chg">Get start</button>
+           <button>See offer</button>
+         </div>
+    </main>
+
+    
+    <div class="products">
+          <h2>Products</h2>
+          <div class="prds">
+            <div class="product-detals">
+                <div class="name">
+                    <img src="SN2.png" width="40px">
+                    <strong id="name">SNEAKER</strong>
+                </div>
+
+                <div class="dtls">
+                    <span id="plusone">0</span>
+                    <strong id="prc">Price $<span id="priceone">0</span></strong>
+                </div>
+
+                <div class="bts">
+                    <button onclick="addOne1()">Add to Cart</button>
+                    <button class="col" onclick="minusOne1()">-</button>
+                </div>
+             </div>
+
+             <div class="product-detals">
+                <div class="name">
+                    <img src="HB2.png" width="40px">
+                    <strong>LADIES BAG</strong>
+                </div>
+
+                <div class="dtls">
+                    <span id="plustwo">0</span>
+                    <strong id="prc">Price $<span id="pricetwo">0</span></strong>
+                    
+                </div>
+
+                <div class="bts">
+                    <button onclick="addOne2()">Add to Cart</button>
+                    <button class="col" onclick="minusOne2()">-</button>
+                </div>
+             </div>
+
+             <div class="product-detals">
+                <div class="name">
+                    <img src="WT1.png" width="40px">
+                    <strong>WATCH</strong>
+                </div>
+
+                <div class="dtls">
+                    <span id="plustree">0</span>
+                    <strong id="prc">Price $<span id="pricetree">0</span></strong>
+                </div>
+
+                <div class="bts">
+                    <button onclick="addOne3()">Add to Cart</button>
+                    <button class="col" onclick="minusOne3()">-</button>
+                </div>
+             </div>
+
+             <div class="product-detals">
+                <div class="name">
+                    <img src="TB5.png" width="40px">
+                    <strong>TRAVEL BAG</strong>
+                </div>
+
+                <div class="dtls">
+                    <span id="plus4">0</span>
+                    <strong id="prc">Price $<span id="pricefour">0</span></strong>
+                </div>
+
+                <div class="bts">
+                    <button onclick="addOne4()">Add to Cart</button>
+                    <button class="col" onclick="minusOne4()">-</button>
+                </div>
+             </div>
+          </div>
+    </div>
+    
+
+  <div class="pooter">
+    <div class="one">
+        <ul>
+            <li>Products</li>
+            <li>Buy</li>
+            <li>Most popular</li>
+            <li>Communty</li>
+            <li>More</li>
+        </ul>
+    </div>
+
+    <div class="two">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Rating</li>
+            <li>Sells</li>
+            <li>Offer</li>
+        </ul>
+    </div>
+
+    <div class="tree">
+        <i class="ri-facebook-circle-fill" style="color: dodgerblue;"></i>
+        <i class="ri-whatsapp-fill" style="color: green;"></i>
+        <i class="ri-twitter-x-fill" style="color: #ffffff;"></i>
+        <i class="ri-tiktok-line" style="color: #ffffff;"></i>
+        <i class="ri-instagram-fill" style="color: #2a74a5;"></i>
+    </div>
+
+    <h3>© 2024 E-STORE. All Rights Reserved</h3>
+  </div>
+    <script src="text.js"></script>
+</body>
+</html>
